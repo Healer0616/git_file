@@ -1,0 +1,17 @@
+Git 基本提交流程
+
+1.Github创建远程仓库（建议勾选README.md文件）
+
+2.初始化本地仓库
+	git init
+3.把文件添加到仓库：
+  把工作区的修改，提交到暂存区
+	git add 文件名
+4.把文件提交到仓库：
+  把暂存区的修改，保存至本地库
+	git commit -m "自定义注释信息"
+5.本地仓库与远程仓库建立连接
+	git remote add origin git@github.com:Healer0616/仓库名称.git
+6.推送至远程仓库
+	git push -u origin master
+
