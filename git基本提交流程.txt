@@ -1,17 +1,59 @@
 Git 基本提交流程
 
-1.Github创建远程仓库（建议勾选README.md文件）
+	1.Github创建远程仓库（建议勾选README.md文件）
 
-2.初始化本地仓库
-	git init
-3.把文件添加到仓库：
-  把工作区的修改，提交到暂存区
-	git add 文件名
-4.把文件提交到仓库：
-  把暂存区的修改，保存至本地库
-	git commit -m "自定义注释信息"
-5.本地仓库与远程仓库建立连接
-	git remote add origin git@github.com:Healer0616/仓库名称.git
-6.推送至远程仓库
-	git push -u origin master
+	2.初始化本地仓库
+		git init
+
+	3.把文件添加到仓库：
+  		把工作区的修改，提交到暂存区
+		git add 文件名
+
+	4.把文件提交到仓库：
+  	  把暂存区的修改，保存至本地库
+		git commit -m "自定义注释信息"
+
+	5.本地仓库与远程仓库建立连接
+		git remote add origin git@github.com:Healer0616/仓库名称.git
+
+	6.推送至远程仓库
+		git push -u origin master
+
+Git 创建分支流程
+	
+	1.拉取项目
+		git clone 地址
+
+	2.新建并切换到dev分支上
+		git switch -c dev
+
+	3.将新建分支推到远程仓库
+		git push origin dev
+
+	4.在分支上写代码并提交
+		git init
+		git commit -m "自定义注释信息"
+		git push -u origin dev
+
+	5.切换到要合并的分支上	
+		git switch master
+	
+	6.合并dev分支到当前的master分支上：
+	  例如：当前在master主分支上
+		git merge dev
+
+	7.将本地合并的master分支推到远程master上
+		git push origin master
+
+	8.完成开发删除本地dev分支
+		git branch -d dev
+	  删除远程dev分支
+		git push origin --delete dev
+
+
+
+
+
+
+
 
