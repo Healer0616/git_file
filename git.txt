@@ -75,6 +75,12 @@ git克隆命令：
 查看当前分支：
 	git branch
 
+提交分支到远程仓库：
+	git push origin dev
+
+测试从远程获取dev分支
+	git pull origin dev
+
 删除dev分支：
 	git branch -d dev
 
